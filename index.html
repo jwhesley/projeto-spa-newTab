@@ -32,7 +32,29 @@
         </nav>
     </header>
     <main>
-        
+        <section class="transacao">
+            <p class="textoTransacao">Nova Transação</p>
+            <form class="formTransacao">
+                <div class="flex tipoTransacao">
+                    <label class="formLabel label" for="acaoMercadoria flex">Tipo de Transação</label>
+                    <select class="selectInput acaoMercadoria" name="acaoMercadoria" form="acaoMercadoria">
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                    </select>
+                </div>
+                <div class="flex mercadoria">
+                    <label class="formularioLabel label" for="nomeMercadoria flex">Nome da Mercadoria</label>
+                    <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria" placeholder="Smartphone">
+                </div>
+                <div class="flex valor">
+                    <label class="formularioLabel label" for="valorInput flex">Valor</label>
+                    <input type="text" name="valorInput" class="textInput valorInput" placeholder="R$ 0,00">
+                </div>
+                <div class="flex botao">
+                    <input class="btnSubmit" type="submit" value="Adicionar Transação">
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 </html>

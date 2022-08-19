@@ -46,3 +46,49 @@ li {
     top: 0;
 }
 
+/*Inicio da estilização do formulário de produto e valores*/
+.tipoTransacao, .mercadoria, .valor, .botao{
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+.btnSubmit {
+    height: 32px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btnSubmit:hover {
+    cursor: pointer;
+}
+.label {
+    font-weight: 300;
+    color: #333333;
+}
+.formLabel{
+    padding-bottom: 5px;
+}
+.selectInput,
+.textInput {
+    color: #888888;
+    padding: 5px;
+    border: none;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    border-color: #979797;
+}
+.transacao,
+.extrato {
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.transacao{
+    height: 100%;
+}
