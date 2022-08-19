@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'lato';
+    font-weight: 300;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: 'lato';
+    font-weight: 600;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato', sans-serif;
+}
+.menu{
+    display: flex;
+}
+nav {
+    height: 60px;
+    background-color: #E0E0E0;
+    align-items: center;
+}
+ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.menu2{
+    display: none;
+}
+.menuTexto{
+    font-weight: 600;
+    font-size: 20px;
+}
+.header-menu{
+    position: sticky;
+    top: 0;
+}
+
