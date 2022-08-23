@@ -63,6 +63,7 @@ main{
     margin-top: 15px;
 }
 .label{
+    font-family: 'lato';
     text-align: initial;
     margin-bottom: -20px;
 }
@@ -74,5 +75,22 @@ main{
 .textInput{
     border: solid #979797;
     border-width: 1px;
+    border-radius: 5px;
+}
+.btnSubmit{
+    background: #333333;
+    color: #E0E0E0;
+    font-family: 'lato';
+    font-size: 17px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+}
+
+.linhaHr{
+    width: 89%;
+    margin: 0 auto;
+    margin-top: 20px;
     border-radius: 5px;
 }
