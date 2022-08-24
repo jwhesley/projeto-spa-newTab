@@ -247,3 +247,81 @@ a.opcao:not(:first-of-type):hover{
         justify-content: space-between;
     }
 }
+
+@media only screen and (min-width: 1112px){
+    .menu2{
+        width: unset;
+        position: sticky;
+        height: unset;
+        background-color: #FFFFFF;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    a.opcao{
+        width: unset;
+        color: #333333;
+        padding: 10px;
+        transition: unset;
+    }
+    #mobile-abrir{
+        display: none
+    }
+    #colorMob1{
+        margin-left: 10px;
+        padding: 5px;
+        border-right:  solid #979797;
+        border-width: 2px;
+
+    }
+    #colorMob2{
+        padding: 5px;
+        margin-left: -22px;
+    }
+    .menuTexto p{
+        margin-right: 630px;
+    margin-top: 10px;
+    }
+    a.opcao:not(:first-of-type):hover {
+        background-color: #333333;
+        color: #FFFFFF;
+    }
+    .transacao {
+        margin-top: 40px;
+        width: 40%;
+        border: 1px solid #979797;
+        border-radius: 5px;
+        display: flex
+    }
+    .organiza{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    #botaoSubmit{
+        width: 396px;
+        margin-right: 5px;
+        height: 30px;
+    }    
+    
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .extrato{
+        width: 55%;
+        margin-top: 35px;
+    }
+    #total{
+        margin-left: 40px;
+        margin-right: 17px;
+        margin-top: 10px;
+    }
+    .textoFinal {
+        margin-right: 20px;
+    }
+}
