@@ -303,8 +303,8 @@ a.opcao:not(:first-of-type):hover{
         margin-top: 10px;
     }
     #botaoSubmit{
-        width: 396px;
-        margin-right: 5px;
+        width: 500px;
+        margin-right: 15px;
         height: 30px;
     }    
     
