@@ -205,6 +205,14 @@ a.opcao:not(:first-of-type):hover{
         display: flex;
         margin: 5px;
     }
+    .textoTransacao{
+        margin-top: 30px;
+        margin-bottom: -20px;
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        align-items: center;
+    }
     .transacao {
         border: 1px solid #979797;
         margin: 20px;
@@ -216,5 +224,26 @@ a.opcao:not(:first-of-type):hover{
     }
     .flex{
         margin-left: 20px;
+    }
+    .botao{
+        width: 100%;
+        justify-content: end;
+        margin-left: -10px;
+        margin-top: 0px;
+    }
+    #botaoSubmit{
+        width: 270px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .linhaHr{
+        display: none;
+    }
+
+    #transacao1,
+    #transacao2,
+    #transacao3{
+        width: 94%;
+        justify-content: space-between;
     }
 }
