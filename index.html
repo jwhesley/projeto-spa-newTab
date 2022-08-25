@@ -38,7 +38,7 @@
     <main>
         <section class="transacao">
             <p class="textoTransacao">Nova Transação</p>
-            <form class="formTransacao">
+            <form class="formTransacao" id="form" name="formulario">
             <div class="organiza">
                 <div class="flex tipoTransacao">
                     <label class="formLabel label" for="acaoMercadoria flex">Tipo de Transação</label>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="flex mercadoria">
                     <label class="formularioLabel label" for="nomeMercadoria flex">Nome da Mercadoria</label>
-                    <input type="text" name="nomeMercadoria" class="textInput nomeMercadoria cor" placeholder="  Smartphone" required>
+                    <input type="text" name="nomeMercadoria" id="produto" class="textInput nomeMercadoria cor" placeholder="  Smartphone">
                 </div>
                 <div class="flex valor">
                     <label class="formularioLabel label" for="valorInput flex">Valor</label>
@@ -57,7 +57,7 @@
                 </div>
             </div>
                 <div class="flex botao">
-                    <input class="btnSubmit" id="botaoSubmit" type="submit" value="Adicionar Transação">
+                    <button class="btnSubmit" id="botaoSubmit" type="submit" onclick="validarForm">Adicionar Transação</button>
                 </div>
             </form>
         </section>
