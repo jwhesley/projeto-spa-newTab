@@ -1,20 +1,20 @@
 function validarForm(e){
     e.preventDefault();
+    var nomeProduto = document.getElementById('produto');
+    var preco = document.getElementById('valor');
+    var tipoTransacao = document.getElementById('opcao');
+    var padraoNumero = /[^0-9(),.]+/g;
 
-    produto = document.getElementById('produto');
-    valor = document.getElementById('valor');
-    opcao = document.getElementById('opcao');
-
-    if(!produto.value){
-        produto.focus();
+    if(nomeProduto.value == ""){
+        alert('Digite o nome do Produto!');
+        nomeProduto.focus();
         return
     }
 
-    console.log(!valor.value && valor.value.replace(/[^0-9]/g, "") == "")
-
-    if(valor.value.replace(/[^0-9]/g, "") == ""){
-        alert('Apenas Números')
-        valor.focus();
-        return parseInt(valor)
+    if(padraoNumero.test(preco.value)){
+        alert('Digite o valor com números!')
+        preco.focus();
+        
+        return
     }
 }
