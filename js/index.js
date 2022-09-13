@@ -4,6 +4,7 @@ var tipoTransacao = document.getElementById('opcao');
 var padraoNumero = /[^0-9(),.]+/g;
 
 
+
 function validarForm(e){
     e.preventDefault();
 
@@ -19,11 +20,28 @@ function validarForm(e){
     }
 }
 
-function testarCampoValor(e){
-    e.preventDefault()
-    console.log(e)
 
-    if((/[0-9]/g).test(e.key)){
-        e.target.value += e.key
+
+function testarCampoValor(e){
+    
+    if(padraoNumero.test(e.key)){
+        e.preventDefault()
+        return
     }
+    if(!e.target.value) return;
+
+    valor = e.target.value.toString();
+    valor = valor.replace(/[\D]+/g, '');
+    valor = valor.replace(/([0-9]{1})$/g, ",$1")
+
+    if(valor.length >= 6){
+        while(/([0-9]{4})[,|\.]/g.test(valor)){
+            valor = valor.replace(/([0-9]{1})$/g, ",$1");
+			valor = valor.replace(/([0-9]{3})[,|\.]/g, ".$1");
+        }
+
     }
+    e.target.value = valor
+}
+
+
