@@ -53,7 +53,7 @@
                 </div>
                 <div class="flex valor">
                     <label class="formularioLabel label" for="valorInput flex">Valor</label>
-                    <input type="text" name="valorInput" id="valor" class="textInput valorInput cor" placeholder="  R$ 0,00" required>
+                    <input type="text" name="valorInput" id="valor" onfocus="this.value = ''" onkeypress="testarCampoValor(event)" class="textInput valorInput cor" placeholder="  R$ 0,00" required>
                 </div>
             </div>
                 <div class="flex botao">
