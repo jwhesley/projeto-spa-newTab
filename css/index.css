@@ -3,25 +3,29 @@
     font-weight: 300;
     src: url('../fonts/Lato-Regular.ttf');
 }
+
 @font-face {
     font-family: 'lato';
     font-weight: 600;
     src: url('../fonts/Lato-Bold.ttf');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'lato', sans-serif;
 }
-.menu{
+
+.menu {
     display: flex;
 }
+
 nav {
     height: 60px;
     background-color: #E0E0E0;
     align-items: center;
 }
+
 ul {
     width: 100%;
     flex-direction: row;
@@ -29,55 +33,63 @@ ul {
     padding: 25px;
     align-items: center;
 }
+
 li {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
-.menu2{
+
+.menu2 {
     display: none;
 }
-.menuTexto{
+
+.menuTexto {
     font-weight: 600;
     font-size: 20px;
 }
-.header-menu{
+
+.header-menu {
     position: sticky;
     top: 0;
 }
 
 /*Inicio da estilização do formulário de produto e valores*/
-main{
+main {
     width: 100%;
 }
-.transacao{
+
+.transacao {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.flex{
+.flex {
     height: 65px;
     width: 90%;
     display: inline-grid;
     margin-top: 15px;
 }
-.label{
+
+.label {
     font-family: 'lato';
     text-align: initial;
     margin-bottom: -20px;
 }
-.textoTransacao{
+
+.textoTransacao {
     display: none;
 }
 
 .selectInput,
-.textInput{
+.textInput {
     border: solid #979797;
     border-width: 1px;
     border-radius: 5px;
 }
-.btnSubmit{
+
+.btnSubmit {
     background: #333333;
     color: #E0E0E0;
     font-family: 'lato';
@@ -85,10 +97,10 @@ main{
     height: 40px;
     border-radius: 5px;
     margin-top: 15px;
-    
+
 }
 
-.linhaHr{
+.linhaHr {
     width: 89%;
     margin: 0 auto;
     margin-top: 20px;
@@ -96,12 +108,13 @@ main{
 }
 
 /*Estilização do extrato*/
-.tituloExtrato{
+.tituloExtrato {
     font-size: 18px;
     text-align: center;
     margin-top: 40px;
 }
-.tabelaExtrato{
+
+.tabelaExtrato {
     display: flex;
     justify-content: space-between;
     margin-left: 25px;
@@ -115,7 +128,7 @@ main{
 
 #transacao1,
 #transacao2,
-#transacao3{
+#transacao3 {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
@@ -125,22 +138,24 @@ main{
     padding-bottom: 15px;
 }
 
-#transacao3{
+#transacao3 {
     border-bottom: double #979797;
 }
 
-#total{
+#total {
     display: flex;
     justify-content: space-between;
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 15px;
 }
-.textoFinal{
+
+.textoFinal {
     margin-right: 30px;
     font-size: 10px;
     text-align: end;
 }
+
 .footer {
     margin-top: 40%;
     width: 100%;
@@ -148,14 +163,15 @@ main{
     background-color: #333333;
 }
 
-#mobile-fechar{
-    display: none;
-}
-.textoTransacao{
+#mobile-fechar {
     display: none;
 }
 
-.menu2{
+.textoTransacao {
+    display: none;
+}
+
+.menu2 {
     width: 0;
     position: fixed;
     height: 100vh;
@@ -165,15 +181,15 @@ main{
     overflow-x: hidden;
     transition: 0.5s;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding-top: 20px;
 }
 
-.mobile-abrir{
+.mobile-abrir {
     width: 250px;
 }
 
-a.opcao{
+a.opcao {
     text-decoration: none;
     width: 100%;
     color: #FFFFFF;
@@ -182,30 +198,34 @@ a.opcao{
     text-align: end;
     white-space: nowrap;
 }
-a.opcao:not(:first-of-type):hover{
+
+a.opcao:not(:first-of-type):hover {
     background-color: #FFFFFF;
     color: #333333;
 }
 
-@media only screen and (min-width: 768px){
-    main{
+@media only screen and (min-width: 768px) {
+    main {
         flex-direction: column;
     }
+
     .tituloExtrato {
         display: flex;
         justify-content: center;
         font-weight: 600;
         font-size: 18px;
     }
-    .label{
+
+    .label {
         font-size: 14px;
     }
 
-    .organiza{
+    .organiza {
         display: flex;
         margin: 5px;
     }
-    .textoTransacao{
+
+    .textoTransacao {
         margin-top: 30px;
         margin-bottom: -20px;
         font-weight: bold;
@@ -213,43 +233,49 @@ a.opcao:not(:first-of-type):hover{
         display: block;
         align-items: center;
     }
+
     .transacao {
         border: 1px solid #979797;
         margin: 20px;
         border-radius: 5px;
     }
+
     .formTransacao {
         padding: 20px;
         justify-content: end;
     }
-    .flex{
+
+    .flex {
         margin-left: 20px;
     }
-    .botao{
+
+    .botao {
         width: 100%;
         justify-content: end;
         margin-left: -10px;
         margin-top: 0px;
     }
-    #botaoSubmit{
+
+    #botaoSubmit {
         width: 270px;
         font-size: 14px;
         font-weight: bold;
     }
-    .linhaHr{
+
+    .linhaHr {
         display: none;
     }
 
     #transacao1,
     #transacao2,
-    #transacao3{
+    #transacao3 {
         width: 94%;
         justify-content: space-between;
     }
 }
 
-@media only screen and (min-width: 1112px){
-    .menu2{
+@media only screen and (min-width: 1112px) {
+    .menu2 {
         width: unset;
         position: sticky;
         height: unset;
@@ -258,34 +284,41 @@ a.opcao:not(:first-of-type):hover{
         padding-bottom: 10px;
 
     }
-    a.opcao{
+
+    a.opcao {
         width: unset;
         color: #333333;
         padding: 10px;
         transition: unset;
     }
-    #mobile-abrir{
+
+    #mobile-abrir {
         display: none
     }
-    #colorMob1{
+
+    #colorMob1 {
         margin-left: 10px;
         padding: 5px;
-        border-right:  solid #979797;
+        border-right: solid #979797;
         border-width: 2px;
 
     }
-    #colorMob2{
+
+    #colorMob2 {
         padding: 5px;
         margin-left: -22px;
     }
-    .menuTexto p{
+
+    .menuTexto p {
         margin-right: 630px;
-    margin-top: 10px;
+        margin-top: 10px;
     }
+
     a.opcao:not(:first-of-type):hover {
         background-color: #333333;
         color: #FFFFFF;
     }
+
     .transacao {
         margin-top: 40px;
         width: 40%;
@@ -293,34 +326,40 @@ a.opcao:not(:first-of-type):hover{
         border-radius: 5px;
         display: flex
     }
-    .organiza{
+
+    .organiza {
         display: flex;
         flex-direction: column;
     }
+
     .botao {
         justify-content: center;
         margin-left: 0px;
         margin-top: 10px;
     }
-    #botaoSubmit{
+
+    #botaoSubmit {
         width: 445px;
         margin-right: 10px;
         height: 30px;
-    }    
-    
-    main{
+    }
+
+    main {
         display: flex;
         flex-direction: row;
     }
-    .extrato{
+
+    .extrato {
         width: 55%;
         margin-top: 35px;
     }
-    #total{
+
+    #total {
         margin-left: 40px;
         margin-right: 17px;
         margin-top: 10px;
     }
+
     .textoFinal {
         margin-right: 20px;
     }

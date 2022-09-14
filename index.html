@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA</title>
     <link rel="stylesheet" href="./css/index.css">
-
 </head>
+
 <body>
     <header class="header-menu">
         <nav class="menu">
@@ -19,18 +20,19 @@
                     <p>Controle Financeiro</p>
                 </li>
                 <li id="mobile-abrir">
-                    <img src="./img/mobile-menu.svg" > <!--abir a função do mobile menu aqui com onclick ABRIR-->
+                    <img src="./img/mobile-menu.svg">
+                    <!--abir a função do mobile menu aqui com onclick ABRIR-->
                 </li>
                 <li class="menu2">
-                <div class="menu2-img">
-                    <a class="opcao" id="mobile-fechar">
-                        <img src="./img/sidebar-close-btn.svg">
-                    </a>
-                </div>
-                <div class="menu-opcao">
-                    <a class="opcao" id="colorMob1" href="#">Cadastro de Transação</a>
-                    <a class="opcao" id="colorMob2" href="#">Limpar Dados</a>
-                </div>
+                    <div class="menu2-img">
+                        <a class="opcao" id="mobile-fechar">
+                            <img src="./img/sidebar-close-btn.svg">
+                        </a>
+                    </div>
+                    <div class="menu-opcao">
+                        <a class="opcao" id="colorMob1" href="#">Cadastro de Transação</a>
+                        <a class="opcao" id="colorMob2" href="#">Limpar Dados</a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -39,63 +41,70 @@
         <section class="transacao">
             <p class="textoTransacao">Nova Transação</p>
             <form class="formTransacao" id="form" name="formulario" onsubmit="validarForm(event)">
-            <div class="organiza">
-                <div class="flex tipoTransacao">
-                    <label class="formLabel label" for="acaoMercadoria flex">Tipo de Transação</label>
-                    <select class="selectInput acaoMercadoria cor" id="opcao" name="acaoMercadoria" form="acaoMercadoria">
-                        <option value="compra">Compra</option>
-                        <option value="venda">Venda</option>
-                    </select>
+                <div class="organiza">
+                    <div class="flex tipoTransacao">
+                        <label class="formLabel label" for="acaoMercadoria flex">Tipo de Transação</label>
+                        <select class="selectInput acaoMercadoria cor" id="opcao" name="acaoMercadoria"
+                            form="acaoMercadoria">
+                            <option value="compra">Compra</option>
+                            <option value="venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="flex mercadoria">
+                        <label class="formularioLabel label" for="nomeMercadoria flex">Nome da Mercadoria</label>
+                        <input type="text" name="nomeMercadoria" id="produto" class="textInput nomeMercadoria cor"
+                            placeholder="  Smartphone">
+                    </div>
+                    <div class="flex valor">
+                        <label class="formularioLabel label" for="valorInput flex">Valor</label>
+                        <input type="text" name="valorInput" id="valor" onfocus="this.value = ''"
+                            onkeypress="testarCampoValor(event)" class="textInput valorInput cor"
+                            placeholder="  R$ 0,00" required>
+                    </div>
                 </div>
-                <div class="flex mercadoria">
-                    <label class="formularioLabel label" for="nomeMercadoria flex">Nome da Mercadoria</label>
-                    <input type="text" name="nomeMercadoria" id="produto" class="textInput nomeMercadoria cor" placeholder="  Smartphone">
-                </div>
-                <div class="flex valor">
-                    <label class="formularioLabel label" for="valorInput flex">Valor</label>
-                    <input type="text" name="valorInput" id="valor" onfocus="this.value = ''" onkeypress="testarCampoValor(event)" class="textInput valorInput cor" placeholder="  R$ 0,00" required>
-                </div>
-            </div>
                 <div class="flex botao">
-                    <button class="btnSubmit" id="botaoSubmit" type="submit" >Adicionar Transação</button>
+                    <button class="btnSubmit" id="botaoSubmit" type="submit">Adicionar Transação</button>
                 </div>
             </form>
         </section>
         <hr class="linhaHr">
         <section class="extrato">
             <h1 class="tituloExtrato">Extrato de Transações</h1>
-                <div class="tabelaExtrato">
-                    <p class="colunaMercadoria"><strong>Mercadoria</strong></p>
-                    <p class="colunaValor"><strong>Valor</strong></p>
-                </div>
-                <div id="transacao1">
-                    <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="valor1">R$12.999,99</p>
-                </div>
-                <div id="transacao2">
-                    <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="valor1">R$12.999,99</p>
-                </div>
-                <div id="transacao3">
-                    <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
-                    <p class="valor1">R$12.999,99</p>
-                </div>
-                <div id="total"> 
-                    <p class="mercadoriaTotal"> <strong>Total</strong></p>
-                    <p class="valorTotal"><strong>$12.999,99</strong></p>
-                </div>
-                <div id="lucroTexto"><p class="textoFinal">(Lucro)</p></div>
-                
+            <div class="tabelaExtrato">
+                <p class="colunaMercadoria"><strong>Mercadoria</strong></p>
+                <p class="colunaValor"><strong>Valor</strong></p>
+            </div>
+            <div id="transacao1">
+                <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
+                <p class="valor1">R$12.999,99</p>
+            </div>
+            <div id="transacao2">
+                <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
+                <p class="valor1">R$12.999,99</p>
+            </div>
+            <div id="transacao3">
+                <p class="mercadoria1"> + Lorem ipsum dolor sit amet consectetur</p>
+                <p class="valor1">R$12.999,99</p>
+            </div>
+            <div id="total">
+                <p class="mercadoriaTotal"> <strong>Total</strong></p>
+                <p class="valorTotal"><strong>$12.999,99</strong></p>
+            </div>
+            <div id="lucroTexto">
+                <p class="textoFinal">(Lucro)</p>
+            </div>
+
         </section>
 
     </main>
-    
+
     <section class="footer">
         <footer>
 
         </footer>
     </section>
-    <script src="./js/index.js"></script>
+    <script src="./js/validacaoForm.js"></script>
 
 </body>
+
 </html>
