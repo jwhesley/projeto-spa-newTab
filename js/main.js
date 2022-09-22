@@ -14,6 +14,11 @@ var mercadoria = [
         valor: 'R$ 1,99',
         transacao: 'compra'
     },
+    {
+        produto: 'Abacaxi',
+        valor: 'R$ 2,79',
+        transacao: 'Venda'
+    },
 ]
 for (mercado in mercadoria){
 
