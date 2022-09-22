@@ -39,6 +39,9 @@ li {
     display: flex;
     align-items: center;
 }
+#colorMob2{
+    cursor: pointer;
+}
 
 .menu2 {
     display: none;
@@ -338,7 +341,8 @@ a.opcao:not(:first-of-type):hover {
         margin-top: 10px;
     }
 
-    a.opcao:not(:first-of-type):hover {
+    #colorMob1:hover,
+    #colorMob2:hover {
         background-color: #333333;
         color: #FFFFFF;
     }
