@@ -5,6 +5,12 @@ if (extratoRaw != null){
     var extrato = [];
 }
 
+const formatarMoeda = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL",
+    minimumFractionDigits: 2,
+});
+
 
 
 
