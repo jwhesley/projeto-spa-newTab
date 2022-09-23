@@ -11,9 +11,14 @@ const formatarMoeda = new Intl.NumberFormat("pt-br", {
     minimumFractionDigits: 2,
 });
 
+desenhaTabela()
 
+//Não permiti o usuário de colar algo no campo de valor.
 
-
+const campoDeValor = document.querySelector("#valor");
+campoDeValor.addEventListener("paste", function(e){
+    e.preventDefault()
+});
 
 function desenhaTabela(){
     let total = 0;
