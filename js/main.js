@@ -28,8 +28,23 @@ function desenhaTabela(){
         element.remove()
     });
 
+    if(extrato.length == 0){
+        document.querySelector('table.lista tbody').innerHTML +=
+        `<tr class="dinamico">
+            <td style="text-align:center; width:100%>Nenhuma Transação Cadastrada</td>
+            </tr>`;
+    }
+
+
 
     for (mercado in mercadoria){
+         let valor = parseFloat(mercadoria[mercado].valor.replace(/[^0-9]/g, ""));
+        if(mercadoria[mercado].opcao){
+            total -= valor;
+        }else{
+            total += valor;
+        }
+
         document.querySelector('table.lista tbody').innerHTML += (
         `<tr class="dinamico">
             <td>
