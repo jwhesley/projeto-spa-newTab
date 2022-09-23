@@ -1,3 +1,12 @@
+var extratoRaw = localStorage.getItem('extrato')
+if (extratoRaw != null){
+    var extrato = JSON.parse(extratoRaw)
+}else{
+    var extrato = [];
+}
+
+
+
 
 
 function desenhaTabela(){
